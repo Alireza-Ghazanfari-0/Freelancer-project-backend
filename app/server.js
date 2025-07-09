@@ -47,6 +47,9 @@ class Application {
     this.#app.use(cookieParser(process.env.COOKIE_PARSER_SECRET_KEY));
   }
   configRoutes() {
+    this.#app.get("/", (req, res) => {
+    res.send("✅ بک‌اند آنلاین است!");
+  });
     this.#app.use("/api", allRoutes);
   }
   errorHandling() {
@@ -62,10 +65,7 @@ class Application {
         message,
       });
 
-app.get("/", (req, res) => {
-  res.send("✅ بک‌اند آنلاین است!");
-});
-      
+
     });
   }
 }
