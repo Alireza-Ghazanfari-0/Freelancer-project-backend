@@ -113,7 +113,7 @@ class userAuthController extends Controller {
       data: {
         message: `کد تائید برای شماره موبایل ${toPersianDigits(
           phoneNumber
-        )} ارسال گردید (شبیه‌سازی شده)`,
+        )} ارسال گردید (شبیه‌سازی شده-کد را در inspect--console بخوانید)`,
         expiresIn: CODE_EXPIRES,
         phoneNumber,
         otp: this.code, // فقط برای تست در فرانت
@@ -234,10 +234,11 @@ class userAuthController extends Controller {
       expires: Date.now(),
       httpOnly: true,
       signed: true,
-      sameSite: "Lax",
+      // sameSite: "Lax",
+      sameSite: "None",
       secure: true,
       path: "/",
-      domain: process.env.DOMAIN,
+      // domain: process.env.DOMAIN,
     };
     res.cookie("accessToken", null, cookieOptions);
     res.cookie("refreshToken", null, cookieOptions);
