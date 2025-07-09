@@ -61,6 +61,11 @@ class Application {
         statusCode,
         message,
       });
+
+app.get("/", (req, res) => {
+  res.send("✅ بک‌اند آنلاین است!");
+});
+      
     });
   }
 }
