@@ -113,7 +113,7 @@ class userAuthController extends Controller {
       data: {
         message: `کد تائید برای شماره موبایل ${toPersianDigits(
           phoneNumber
-        )} ارسال گردید (شبیه‌سازی شده-کد را در inspect--console بخوانید)`,
+        )} ارسال گردید (شبیه‌سازی شده-کد : ${this.code} )`,
         expiresIn: CODE_EXPIRES,
         phoneNumber,
         otp: this.code, // فقط برای تست در فرانت
