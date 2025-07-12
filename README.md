@@ -49,7 +49,7 @@ Create a `.env` file with the following content:
 
 ```
 APP_DB=mongodb://0.0.0.0:27017/react-freelancer-app 
-APP_DB=mongodb+srv://freelancer-app-alireza:ali0936714@cluster0-freelancer.pjgkpj1.mongodb.net/react-app-freelancer-mongo-atlas?retryWrites=true&w=majority&appName=Cluster0-freelancer
+APP_DB=mongodb+srv://<username>:<password>@cluster0-freelancer.pjgkpj1.mongodb.net/react-app-freelancer-mongo-atlas?retryWrites=true&w=majority&appName=Cluster0-freelancer
 KAVENEGAR_API_KEY=KAVENEGAR_API_KEY
 ACCESS_TOKEN_SECRET_KEY=EREWRDr3423$_%^$@jghbhgNBVN@@@^&^%35 
 REFRESH_TOKEN_SECRET_KEY=DDDDDDFHGSAEWQEFRHGJYTRREwe123!@!!@^&^%^ 
