@@ -45,11 +45,28 @@ npm run dev
 
 Create a `.env` file with the following content:  
 یک فایل `.env` با مقادیر زیر بسازید:
+باتوجه ب لوکال بودن با نبودن از موارد استفاده کنید:
 
 ```
+APP_DB=mongodb://0.0.0.0:27017/react-freelancer-app 
+APP_DB=mongodb+srv://freelancer-app-alireza:ali0936714@cluster0-freelancer.pjgkpj1.mongodb.net/react-app-freelancer-mongo-atlas?retryWrites=true&w=majority&appName=Cluster0-freelancer
+KAVENEGAR_API_KEY=KAVENEGAR_API_KEY
+ACCESS_TOKEN_SECRET_KEY=EREWRDr3423$_%^$@jghbhgNBVN@@@^&^%35 
+REFRESH_TOKEN_SECRET_KEY=DDDDDDFHGSAEWQEFRHGJYTRREwe123!@!!@^&^%^ 
+COOKIE_PARSER_SECRET_KEY=fdGEWREGRTsdfdkjasfaDS2323~@~!23426* 
+TOKEN_SECRET_KEY=sdvasdnfdfsafGHJHKer~@@!$$$^%&^&^*@HgJGJ 
+ZARINPAL_CALLBACK_URL=/api/payment/verify
+CLIENT_URL=https://freelancer-application.liara.run
+CLIENT_URL=http://localhost:3000
+SERVER_URL=https://freelancer-project-backend-87md.onrender.com
+SERVER_URL=http://localhost:5000 
+NODE_ENV=development
+NODE_ENV=production
 PORT=5000
-MONGODB_URI=your_mongodb_atlas_uri
-JWT_SECRET=your_secret_key
+ALLOW_CORS_ORIGIN=https://freelancer-application.liara.run
+ALLOW_CORS_ORIGIN=http://localhost:3000
+DOMAIN=localhost
+DOMAIN=...
 ```
 
 ## 🛠 Project Purpose | هدف پروژه
@@ -65,3 +82,4 @@ Admins oversee and manage the whole platform.
 
 Thanks 🙌 | با تشکر 🙌  
 **Alireza Ghazanfari**
+alireza.ghazanfari@yahoo.com
